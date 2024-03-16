@@ -1,23 +1,26 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form validation</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100">
     <div id="error"></div>
-    <form id="form" action="/" method="get">
-        <div>
-        <label for="name">name:</label>
-        <input id="name" name="name" type="text">
+    <form id="form" action="/" method="get" class="max-w-md mx-auto mt-8 bg-white p-8 rounded shadow-md">
+        <div class="mb-4">
+            <label for="name" class="block text-gray-700">Name:</label>
+            <input id="name" name="name" type="text" class="mt-1 p-2 border rounded w-full">
         </div>
-         <div>
-        <label for="password">password:</label>
-        <input id="password" name="password" type="password">
+        <div class="mb-4">
+            <label for="password" class="block text-gray-700">Password:</label>
+            <input id="password" name="password" type="password" class="mt-1 p-2 border rounded w-full">
         </div>
-        <button type="submit">submit</button>
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
     </form>
+
+    <!-- Include your JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
